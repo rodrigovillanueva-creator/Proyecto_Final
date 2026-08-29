@@ -22,3 +22,18 @@ Comando !reto: Asigna una tarea ecológica diaria (ejemplo: "Hoy no uses bolsas 
 Comando !trivia: Lanza preguntas sobre el cambio climático (basadas en los datos de la ONU) para educar de forma divertida.
 Comando !huella: Permite calcular de forma rápida las emisiones estimadas según el transporte usado en el día.
 Tabla de clasificación (!top): Muestra los usuarios con más acciones ecológicas dentro del servidor.
+
+## Este es el tipo de mi proyecto:
+> Bot de Discord + Base de datos (SQLite)
+
+## Las bibliotecas que voy a utilizar:
+- `discord.py` 
+- `sqlite3` 
+- `requests` 
+
+## Referencias útiles:
+https://github.com/rodrigovillanueva-creator/botdediscord.git
+
+## Los artículos de la guía que me ayudarán durante el desarrollo:
+Guía paso a paso para crear la aplicación del bot en el portal de desarrolladores de Discord y obtener el Token de acceso... [Guía de configuración de Discord](https://discord.com/developers/docs/intro)
+Tutorial detallado para conectar Python con Discord, manejar eventos y crear comandos interactivos... [Tutorial de discord.py en Real Python](https://realpython.com/how-to-make-a-discord-bot-python/)
