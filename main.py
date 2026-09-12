@@ -175,6 +175,4 @@ async def mispuntos(ctx):
         total = 0
     await ctx.send(f"🏆 {usuario}, tienes {total} puntos acumulados.")
 
-bot.run("MTQ1MTk3MTQwNDI5MDU4ODcxNA."
-        "G5a4TT.VW2IKCTjLp5dKeLHPCww"
-        "SUcvUye8kFWgzU6Bfs")
+bot.run("token")
