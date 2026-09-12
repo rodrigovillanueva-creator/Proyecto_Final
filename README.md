@@ -57,7 +57,7 @@ o
 
 Si la respuesta es correcta, el usuario obtiene +10 puntos.
 
-📊 !huella
+  # 📊 !huella
 
 Permite calcular una estimación de las emisiones de CO₂ producidas al recorrer una determinada cantidad de kilómetros.
 
