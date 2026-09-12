@@ -1,39 +1,141 @@
-# Proyecto_Final
-Proyecto de graduación relacionado al cambio climático
+# 🌱 Bot de Sostenibilidad
 
-## Idea
-Un bot interactivo de Discord que motiva a los usuarios a reducir su rastro de carbono mediante un sistema de retos diarios, una calculadora de impacto ambiental y unas trivias sobre el cambio climático.
+Autor: Rodrigo Villanueva
 
-## Tipo de proyecto
-Bot de Discord + Base de datos 
+Un bot interactivo de Discord desarrollado en Python que busca motivar a las personas a realizar acciones sostenibles y aprender más sobre el medio ambiente mediante retos, trivias y una calculadora de emisiones de CO₂.
 
-## Tecnologías
-Python 
-SQLite
-API
-GitHub
-## Problema que resuelve
-1. ¿Qué problema relacionado con el cambio climático resuelve?
-Ataca la falta de información práctica y la desmotivación. La mayoría de personas sabe que el cambio climático es grave, pero no sabe qué acciones diaria tomar ni siente que sus pequeñas acciones marquen la diferencia.
-2. ¿A quién ayuda o beneficia?
-A estudiantes, comunidades de servidores de Discord y jóvenes interesados en el medio ambiente que buscan formar hábitos sostenibles de manera interactiva y divertida.
-4. ¿Cómo funcionará en términos generales?
-Comando !reto: Asigna una tarea ecológica diaria (ejemplo: "Hoy no uses bolsas de plástico"). Si el usuario sube una foto o confirma que la cumplió, gana puntos de impacto.
-Comando !trivia: Lanza preguntas sobre el cambio climático (basadas en los datos de la ONU) para educar de forma divertida.
-Comando !huella: Permite calcular de forma rápida las emisiones estimadas según el transporte usado en el día.
-Tabla de clasificación (!top): Muestra los usuarios con más acciones ecológicas dentro del servidor.
+## 🎯 Descripción del proyecto
+El proyecto consiste en un bot de Discord relacionado con el cambio climático y el cuidado del medio ambiente.
 
-## Este es el tipo de mi proyecto:
-> Bot de Discord + Base de datos (SQLite)
+Su objetivo es hacer que aprender y realizar acciones ecológicas sea más sencillo y divertido. El bot propone retos sostenibles, permite responder preguntas sobre el medio ambiente, calcula una estimación de las emisiones de CO₂ según el medio de transporte utilizado y entrega puntos a los usuarios.
 
-## Las bibliotecas que voy a utilizar:
-- `discord.py` 
-- `sqlite3` 
-- `requests` 
+## 🌎 Posibles usos
+El bot puede utilizarse en:
 
-## Referencias útiles:
-https://github.com/rodrigovillanueva-creator/botdediscord.git
+Servidores educativos de Discord.
+Comunidades interesadas en el medio ambiente.
+Actividades escolares sobre cambio climático.
+Grupos de estudiantes que quieran desarrollar hábitos sostenibles.
+Comunidades que quieran aprender sobre la reducción de emisiones de CO₂.
 
-## Los artículos de la guía que me ayudarán durante el desarrollo:
-Guía paso a paso para crear la aplicación del bot en el portal de desarrolladores de Discord y obtener el Token de acceso... [Guía de configuración de Discord](https://discord.com/developers/docs/intro)
-Tutorial detallado para conectar Python con Discord, manejar eventos y crear comandos interactivos... [Tutorial de discord.py en Real Python](https://realpython.com/how-to-make-a-discord-bot-python/)
+## ⚙️Funciones y características
+ # 🌱 !reto
+
+Entrega al usuario un reto ecológico aleatorio.
+
+Algunos ejemplos son:
+
+Usar una botella reutilizable.
+Utilizar una bolsa de tela.
+Apagar luces y aparatos que no se estén utilizando.
+Separar los residuos reciclables.
+Aprovechar la luz natural.
+
+  # 🎉 !cumplido
+
+Permite al usuario indicar que completó su reto.
+Al hacerlo, recibe:
++10 puntos
+Los puntos se almacenan temporalmente para cada usuario mientras el bot está funcionando.
+
+  # ❓ !trivia
+
+Selecciona aleatoriamente una pregunta relacionada con el medio ambiente.
+Por ejemplo, el usuario puede responder preguntas sobre:
+
+Emisiones de CO₂.
+Medios de transporte.
+Acidificación de los océanos.
+Cambio climático.
+
+Para responder se utiliza:
+!respuesta a
+o
+!respuesta b
+o
+!respuesta c
+
+Si la respuesta es correcta, el usuario obtiene +10 puntos.
+
+📊 !huella
+
+Permite calcular una estimación de las emisiones de CO₂ producidas al recorrer una determinada cantidad de kilómetros.
+
+Ejemplo:
+
+!huella auto 10
+
+El bot calcula las emisiones utilizando un factor diferente para cada medio de transporte:
+
+Transporte	Emisión estimada por km
+🚗 Auto	0.19 kg
+🚌 Bus	0.05 kg
+🚇 Metro	0.03 kg
+🚲 Bicicleta	0 kg
+🚶 Caminando	0 kg
+
+El resultado es una estimación basada en los factores utilizados por el programa.
+
+🏆 !mispuntos
+
+Permite consultar la cantidad de puntos acumulados por el usuario.
+
+Ejemplo:
+!mispuntos
+El bot responde mostrando los puntos actuales.
+
+## 🛠️ Tecnologías utilizadas
+El proyecto utiliza:
+Python
+discord.py
+Discord
+Random, biblioteca de Python utilizada para seleccionar retos y preguntas aleatoriamente.
+## 📥 Instalación y uso
+
+Para utilizar el proyecto se necesita:
+
+·Tener Python instalado.
+·Instalar la biblioteca discord.py.
+·Crear y configurar un bot en el portal de desarrolladores de Discord.
+·Añadir el bot a un servidor de Discord.
+·Colocar el token del bot de forma segura.
+·Ejecutar el programa.
+ # Instalación de discord.py
+  pip install discord.py
+
+## 💬 Comentarios y mejoras
+Los comentarios de los usuarios pueden ayudar a mejorar el proyecto.
+Mis planes de mejora:
+Nuevos retos ecológicos.
+Nuevas preguntas para las trivias.
+Nuevos medios de transporte.
+Nuevas funciones para el sistema de puntos.
+Mejoras en la interacción del bot.
+
+En futuras versiones también se podrían agregar funciones como una tabla de clasificación, almacenamiento permanente de puntos y más estadísticas ambientales.
+
+## 🚀 Futuras mejoras
+
+Algunas funciones que podrían incorporarse posteriormente son:
+
+🏆 Tabla de clasificación entre usuarios.
+💾 Base de datos para guardar los puntos permanentemente.
+🌎 Más información sobre cambio climático.
+🌱 Más retos ecológicos.
+❓ Más preguntas de trivia.
+📈 Estadísticas sobre las emisiones de los usuarios.
+🎖️ Insignias o recompensas por alcanzar determinadas cantidades de puntos.
+
+## 🌍 Importancia del proyecto
+
+Este proyecto busca demostrar que la tecnología puede utilizarse para promover hábitos sostenibles y aumentar la conciencia ambiental.
+
+A través de un bot de Discord, los usuarios pueden aprender, participar en retos y conocer de manera sencilla el impacto estimado de algunos de sus medios de transporte.
+
+## 🎤 Conclusión
+
+El Bot de Sostenibilidad combina programación, educación ambiental y gamificación para crear una experiencia interactiva.
+
+Su principal valor es convertir pequeñas acciones ecológicas en una actividad más participativa y entretenida.
+
+¡Gracias por leer mi proyecto! 🌱🌎
